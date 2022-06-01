@@ -87,7 +87,8 @@ body {
 }
 
 footer {
-  padding: 15px 25px;
+  padding: 2% 10% 3% 10%;
+
   background: #121212;
   color: #ebebeb;
   font-size: 20px;
@@ -97,12 +98,14 @@ footer {
   display: flex;
   width: 2%;
   height: 2%;
+  float: left;
 }
 
 footer > p {
+  float: right;
   display: flex;
   text-align: center;
-  margin-left: 5%;
+  margin-right: 50%;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

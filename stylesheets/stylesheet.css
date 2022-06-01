@@ -22,9 +22,69 @@ h1 {
 
   color: #ebebeb;
 
+  display: flex;
+
   text-align: center;
   font-size: 46px;
   font-weight: bold;
+  margin-left: 37.5%;
+}
+
+.block-effect {
+}
+
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: "";
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards,
+    revealingOut var(--td) var(--t) forwards;
+}
+
+@keyframes revealBlock {
+  100% {
+    color: #ebebeb;
+  }
+}
+
+@keyframes revealingIn {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 nav {
@@ -84,67 +144,31 @@ a {
 }
 
 body {
-  background-color: #fffbdb;
+  background-color: #fffbdb8f;
   margin: 3px;
   color: #121212;
 }
 
-.block-effect {
-  font-size: calc(8px + 6vw);
-}
+#back-to-top {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.block-reveal {
-  --t: calc(var(--td) + var(--d));
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 
-  color: transparent;
-  padding: 4px;
-
-  position: relative;
-  overflow: hidden;
-
-  animation: revealBlock 0s var(--t) forwards;
-}
-
-.block-reveal::after {
-  content: "";
-
-  width: 0%;
-  height: 100%;
-  padding-bottom: 4px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: var(--bc);
-  animation: revealingIn var(--td) var(--d) forwards,
-    revealingOut var(--td) var(--t) forwards;
-}
-
-@keyframes revealBlock {
-  100% {
-    color: #121212;
-  }
-}
-
-@keyframes revealingIn {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes revealingOut {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
+  background: -o-radial-gradient(#121212, #1f1f1f);
+  background: -moz-radial-gradient(#121212, #1f1f1f);
+  background: -webkit-radial-gradient(#121212, #1f1f1f);
+  background: radial-gradient(#121212, #1f1f1f);
+  color: whitesmoke;
+  text-shadow: 0px 1px 1px #121212, 0px 1.5px 1px #121212;
+  text-decoration: none;
+  text-align: center;
 }
 
 footer {

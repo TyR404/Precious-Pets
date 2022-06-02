@@ -22,17 +22,22 @@ h1 {
 
   color: #ebebeb;
 
-  display: flex;
-
   text-align: center;
   font-size: 46px;
   font-weight: bold;
-  margin-left: 37.5%;
+  margin: 0 20%;
 }
 
 h2 {
   text-align: center;
   font-size: 26px;
+}
+
+#h2-style {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
 }
 
 .section-title::before {
@@ -62,64 +67,9 @@ html {
 }
 
 .section-title {
-  position: relative;
   display: inline-block;
-  text-align: center;
-  padding: 9px 27px;
-  margin: 1% 0% 2% 44.25%;
-}
-
-.block-reveal {
-  --t: calc(var(--td) + var(--d));
-
-  color: transparent;
-
   position: relative;
-  overflow: hidden;
-
-  animation: revealBlock 0s var(--t) forwards;
-}
-
-.block-reveal::after {
-  content: "";
-
-  width: 0%;
-  height: 100%;
-  padding-bottom: 4px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: var(--bc);
-  animation: revealingIn var(--td) var(--d) forwards,
-    revealingOut var(--td) var(--t) forwards;
-}
-
-@keyframes revealBlock {
-  100% {
-    color: #121212;
-  }
-}
-
-@keyframes revealingIn {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes revealingOut {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
+  padding: 9px 27px;
 }
 
 nav {
@@ -202,6 +152,59 @@ body {
   background-color: #fffbdb8f;
   margin: 3px;
   color: #121212;
+}
+
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: "";
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards,
+    revealingOut var(--td) var(--t) forwards;
+}
+
+@keyframes revealBlock {
+  100% {
+    color: #121212;
+  }
+}
+
+@keyframes revealingIn {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 #back-to-top {

@@ -17,7 +17,7 @@ header {
 }
 
 h1 {
-  padding: 30px;
+  padding: 2.5%;
   margin-right: 6.5%;
 
   color: #ebebeb;
@@ -30,14 +30,49 @@ h1 {
   margin-left: 37.5%;
 }
 
-.block-effect {
+h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.section-title::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.section-title:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.section-title::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #d7bb00;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 9px 27px;
+  margin: 1% 0% 2% 44.25%;
 }
 
 .block-reveal {
   --t: calc(var(--td) + var(--d));
 
   color: transparent;
-  padding: 4px;
 
   position: relative;
   overflow: hidden;
@@ -114,12 +149,25 @@ nav > ul {
   width: calc(calc(100% / 8) - 2.5px);
   margin: 2.5px 0 0 0;
   list-style-type: none;
+
+  -o-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus {
   text-decoration: underline;
+
+  border: #d7bb00 solid 3px;
+
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 a {
@@ -140,6 +188,13 @@ a {
 
   nav {
     position: static;
+  }
+  footer {
+    padding: 10vh 10% 10vh 10%;
+
+    background: #121212;
+    color: #ebebeb;
+    font-size: 20px;
   }
 }
 

@@ -98,7 +98,7 @@ html {
 
 @keyframes revealBlock {
   100% {
-    color: #ebebeb;
+    color: #121212;
   }
 }
 
@@ -139,7 +139,7 @@ nav > ul {
 .nav-link:link,
 .nav-link:visited {
   background-color: #121212;
-  color: #f7f7f7;
+  color: #ebebeb;
   text-decoration: none;
 
   font-size: 24px;

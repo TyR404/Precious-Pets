@@ -84,6 +84,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
+  padding: 2% 0;
 }
 
 nav {

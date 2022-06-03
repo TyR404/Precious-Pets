@@ -162,6 +162,8 @@ a {
   }
   footer {
     padding: 10vh 10% 10vh 10%;
+    position: relative;
+    bottom: 0%;
 
     background: #121212;
     color: #ebebeb;

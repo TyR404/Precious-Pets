@@ -8,24 +8,31 @@
   float: left;
   width: 87px;
   height: 102.8px;
-  padding: 0 0 0 5%;
+  padding: 3% 0 0 5%;
 }
 
 header {
-  background: #121212;
+  background-color: #121212;
   color: #f7f7f7;
 }
 
+#header-style {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > div > * {
+  width: calc(100% / 3);
+}
+
 h1 {
-  padding: 2.5%;
-  margin-right: 6.5%;
+  padding: 10%;
 
   color: #ebebeb;
 
   text-align: center;
   font-size: 46px;
   font-weight: bold;
-  margin: 0 20%;
 }
 
 h2 {
@@ -70,6 +77,13 @@ html {
   display: inline-block;
   position: relative;
   padding: 9px 27px;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 nav {
@@ -237,11 +251,12 @@ footer {
   font-size: 20px;
 }
 
-#socials {
+#social {
   display: flex;
-  width: 2%;
-  height: 2%;
+  width: 20px;
+  height: 20px;
   float: left;
+  margin-left: 1%;
 }
 
 footer > p {

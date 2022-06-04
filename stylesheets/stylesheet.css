@@ -145,29 +145,34 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  nav > ul {
-    /*turns nav into columns once it has reached the max width*/
-    flex-direction: column;
+@media (max-width: 900px) {
+  header > div > * {
+    width: calc(100% / 4);
   }
+  #contact {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1 1 0;
+  }
+
   /*defines that nav-link is 100% of the screen*/
   .nav-link:visited,
   .nav-link:link {
-    z-index: 0;
-    width: 100%;
+    text-align: center;
+    width: calc(calc(100% / 4) - 2.5px);
   }
-
   nav {
-    position: static;
-  }
-  footer {
-    padding: 10vh 10% 10vh 10%;
     position: relative;
-    bottom: 0%;
+  }
 
-    background: #121212;
-    color: #ebebeb;
-    font-size: 20px;
+  footer {
   }
 }
 
@@ -253,7 +258,7 @@ body {
 }
 
 footer {
-  padding: 2% 10% 3% 10%;
+  padding: 3vh 10% 5vh 10%;
 
   background: #121212;
   color: #ebebeb;

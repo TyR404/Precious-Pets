@@ -135,6 +135,7 @@ a {
   .nav-link:link {
     text-align: center;
     width: calc(calc(100% / 4) - 2.5px);
+    padding: 1% 0;
   }
   nav {
     position: relative;

@@ -35,36 +35,9 @@ h2 {
   margin-bottom: 0.5%;
 }
 
-.section-title::before {
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-.section-title:hover:before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-.section-title::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  inset: 0 0 0 0;
-  background: #d7bb00;
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
 html {
   block-size: 100%;
   inline-size: 100%;
-}
-
-.section-title {
-  display: inline-block;
-  position: relative;
-  padding: 9px 27px;
 }
 
 nav > ul {

@@ -136,6 +136,7 @@ a {
     text-align: center;
     width: calc(calc(100% / 4) - 2.5px);
     padding: 1% 0;
+    font-size: 20px;
   }
   nav {
     position: relative;
@@ -258,7 +259,7 @@ footer {
   width: 20px;
   height: 20px;
   float: left;
-  margin-left: 1%;
+  margin: 0 50%;
 }
 
 footer > p {

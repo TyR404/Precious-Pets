@@ -204,7 +204,7 @@ body {
 
 #back-to-top {
   position: fixed;
-  right: 5px;
+  left: 5px;
   bottom: 5px;
   display: flex;
   justify-content: center;
@@ -226,7 +226,7 @@ body {
 
 #contact {
   position: fixed;
-  left: 5px;
+  right: 5px;
   bottom: 5px;
   display: flex;
   justify-content: center;

@@ -10,15 +10,8 @@
     <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
     <style>
-        #content {
-            display: flex;
-            float: right;
-            margin: 3% 20% 3% 0;
-            flex-direction: column;
-        }
-
         p {
-            margin: 1% 14%;
+            margin: 0 auto;
             text-align: left;
         }
 
@@ -28,14 +21,18 @@
         }
 
         #pdf {
-            margin-top: 8%;
+            display: block;
+
             text-align: center;
             color: inherit;
             text-decoration: underline;
-            padding: 2% 1%;
+            padding: 3% 3%;
             text-align: center;
             font-weight: bold;
             font-size: 20px;
+            width: fit-content;
+            margin: 1% 25%;
+
         }
 
         #pdf:hover,
@@ -43,6 +40,75 @@
             text-decoration: underline;
             background-color: #121212;
             color: #ebebeb;
+        }
+
+
+
+        #urn-image {
+            width: 96.25%;
+            padding-top: 2.5px;
+            height: auto;
+
+            -webkit-animation-delay: 10s;
+            -moz-animation-delay: 10s;
+            -o-animation-delay: 10s;
+            animation-delay: 10s;
+            -webkit-animation: fadeInAnimation ease-in-out 3s;
+            -moz-animation: fadeInAnimation ease-in-out 3s;
+            -o-animation: fadeInAnimation ease-in-out 3s;
+            animation: fadeInAnimation ease-in-out 3s;
+            -webkit-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            -o-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #content {
+            display: flex;
         }
     </style>
 </head>
@@ -71,35 +137,22 @@
         <div class="block-reveal" style="--bc: #383838; --d: 0.1s">
 
             <section id="content">
-                <h2 style="font-size: 36px">Urn Gallery</h2>
+                <div>
+                    <img id="urn-image" src="pictures/Urns.png" alt="Rows of urns we offer" />
+                </div>
 
-                <br />
+                <div style="justify-items: center; width: 45%;">
+
+                    <h2 style="font-size: 36px; margin: 5% 20%;">Urn Gallery</h2>
+
+                    <a id="pdf" href="documents/Urn Gallery.pdf" target="_blank">Click Here To View The Urns</a>
+                </div>
 
 
-                <a id="pdf" href="documents/Urn Gallery.pdf" target="_blank">Click Here To View The Urns</a>
+
             </section>
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
-        <a href="#top" id="back-to-top">&#9651;</a>
-        <a href="contact.html" id="contact"> Contact Us</a>
+            <a href="#top" id="back-to-top">&#9651;</a>
+            <a href="contact.html" id="contact"> Contact Us</a>
     </main>
 
     <footer>

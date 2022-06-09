@@ -110,6 +110,13 @@
         #content {
             display: flex;
         }
+
+        @media (max-width: 600px) {
+            #column1 {
+                width: 50%;
+            }
+
+        }
     </style>
 </head>
 
@@ -137,11 +144,11 @@
         <div class="block-reveal" style="--bc: #383838; --d: 0.1s">
 
             <section id="content">
-                <div>
+                <div id="column1">
                     <img id="urn-image" src="pictures/Urns.png" alt="Rows of urns we offer" />
                 </div>
 
-                <div style="justify-items: center; width: 45%;">
+                <div id="column2" style="justify-items: center; width: 45%;">
 
                     <h2 style="font-size: 36px; margin: 5% 20%;">Urn Gallery</h2>
 

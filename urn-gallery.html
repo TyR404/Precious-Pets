@@ -15,6 +15,10 @@
             text-align: left;
         }
 
+        h2 {
+            margin: 5% 20%;
+        }
+
         h3 {
             text-align: center;
             margin: 0 20%;
@@ -31,7 +35,7 @@
             font-weight: bold;
             font-size: 20px;
             width: fit-content;
-            margin: 1% 25%;
+            margin: 1% auto;
 
         }
 
@@ -45,18 +49,14 @@
 
 
         #urn-image {
-            width: 96.25%;
+            width: 100%;
             padding-top: 2.5px;
             height: auto;
 
-            -webkit-animation-delay: 10s;
-            -moz-animation-delay: 10s;
-            -o-animation-delay: 10s;
-            animation-delay: 10s;
-            -webkit-animation: fadeInAnimation ease-in-out 3s;
-            -moz-animation: fadeInAnimation ease-in-out 3s;
-            -o-animation: fadeInAnimation ease-in-out 3s;
-            animation: fadeInAnimation ease-in-out 3s;
+            -webkit-animation: fadeInAnimation ease-in-out 4s;
+            -moz-animation: fadeInAnimation ease-in-out 4s;
+            -o-animation: fadeInAnimation ease-in-out 4s;
+            animation: fadeInAnimation ease-in-out 4s;
             -webkit-animation-iteration-count: 1;
             -moz-animation-iteration-count: 1;
             -o-animation-iteration-count: 1;
@@ -107,13 +107,47 @@
             }
         }
 
+
+
         #content {
             display: flex;
         }
 
-        @media (max-width: 600px) {
+        #column1 {
+            width: 50%;
+        }
+
+        #column2 {
+            width: 45%;
+        }
+
+        @media (max-width: 900px) {
+            #content {
+                flex-direction: column;
+                width: 100%;
+            }
+
             #column1 {
-                width: 50%;
+                margin-top: 1%;
+                width: 100%;
+                padding-top: 0.5px;
+
+            }
+
+            #column2 {
+                flex-wrap: wrap;
+                display: block;
+                width: 100%;
+
+            }
+
+            #h2-style {
+                width: 80%;
+
+            }
+
+            h2 {
+                margin: 3% 20%;
             }
 
         }
@@ -148,9 +182,9 @@
                     <img id="urn-image" src="pictures/Urns.png" alt="Rows of urns we offer" />
                 </div>
 
-                <div id="column2" style="justify-items: center; width: 45%;">
+                <div id="column2" style="justify-items: center;">
 
-                    <h2 style="font-size: 36px; margin: 5% 20%;">Urn Gallery</h2>
+                    <h2 style="font-size: 36px;">Urn Gallery</h2>
 
                     <a id="pdf" href="documents/Urn Gallery.pdf" target="_blank">Click Here To View The Urns</a>
                 </div>

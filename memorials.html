@@ -20,9 +20,62 @@
       margin: 0 20%;
     }
 
-    img {
+    .image {
       margin: 1% auto;
       display: block;
+
+      -webkit-animation: fadeInAnimation ease-in-out 5s;
+      -moz-animation: fadeInAnimation ease-in-out 5s;
+      -o-animation: fadeInAnimation ease-in-out 5s;
+      animation: fadeInAnimation ease-in-out 5s;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      -o-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -62,7 +115,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Trixie.png" />
+        <img class="image" src="pictures/Pets/Trixie.png" />
 
         <h3>Trixie</h3>
         <h3>Oct 2005-Feb 2022</h3>
@@ -103,7 +156,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Chloe.png" />
+        <img class="image" src="pictures/Pets/Chloe.png" />
 
         <h3>Chloe</h3>
         <h3>Oct 26,2008-Jan 29, 2022</h3>
@@ -126,7 +179,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Sonar.png" />
+        <img class="image" src="pictures/Pets/Sonar.png" />
 
         <h3>Sonar</h3>
         <h3>April 9, 2008 - October 19, 2020</h3>
@@ -154,7 +207,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Ophelia Cook.png" />
+        <img class="image" src="pictures/Pets/Ophelia Cook.png" />
 
         <h3>Ophelia Cook</h3>
         <h3>Ophie</h3>
@@ -166,7 +219,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Kiera.png" />
+        <img class="image" src="pictures/Pets/Kiera.png" />
 
         <h3>Kiera</h3>
         <h3>2006-2019</h3>
@@ -189,7 +242,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Taz.png" />
+        <img class="image" src="pictures/Pets/Taz.png" />
 
         <h3>Taz (AKA: Piggy)</h3>
         <h3>2007-2019</h3>
@@ -221,7 +274,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Cirina.png" />
+        <img class="image" src="pictures/Pets/Cirina.png" />
 
         <h3>Cirina</h3>
         <h3>2006-2019</h3>
@@ -242,7 +295,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Lois.png" />
+        <img class="image" src="pictures/Pets/Lois.png" />
 
         <h3>Lois</h3>
         <h3>2006-2019</h3>
@@ -257,7 +310,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Jack.png" />
+        <img class="image" src="pictures/Pets/Jack.png" />
 
         <h3>Jack</h3>
         <h3>2000-2016</h3>
@@ -275,7 +328,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Princess & Douchess.png" />
+        <img class="image" src="pictures/Pets/Princess & Douchess.png" />
 
         <h3>Princess & Duchess</h3>
         <h3>(2001-2016) & (2003-2016)</h3>
@@ -323,7 +376,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Jake.png" />
+        <img class="image" src="pictures/Pets/Jake.png" />
 
         <h3>Jake</h3>
         <h3>2000-2015</h3>
@@ -345,7 +398,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Tex & Rocky.png" />
+        <img class="image" src="pictures/Pets/Tex & Rocky.png" />
 
         <h3>Tex (big brother) and Rocky</h3>
         <h3>Tex: July 4, 2000 to March 24, 2012</h3>
@@ -361,7 +414,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Rusty.png" />
+        <img class="image" src="pictures/Pets/Rusty.png" />
 
         <h3>Rusty</h3>
         <h3>March 05/06 - June 05/14</h3>
@@ -378,7 +431,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Mikki.png" />
+        <img class="image" src="pictures/Pets/Mikki.png" />
 
         <h3>Mikki</h3>
         <h3>Oct. 1/98 - Aug. 13/12</h3>
@@ -397,7 +450,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/KO.png" />
+        <img class="image" src="pictures/Pets/KO.png" />
 
         <h3>The Power Of A Pet - KO</h3>
 
@@ -424,7 +477,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Coda.png" />
+        <img class="image" src="pictures/Pets/Coda.png" />
 
         <h3>In loving memory of Coda</h3>
         <h3>2002-2010</h3>
@@ -448,7 +501,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Buck.png" />
+        <img class="image" src="pictures/Pets/Buck.png" />
 
         <h3>Buck</h3>
         <h3>1996 - 2005</h3>
@@ -477,7 +530,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Attika.png" />
+        <img class="image" src="pictures/Pets/Attika.png" />
 
         <h3>In Loving Memory of Our Beloved Friend Attika</h3>
         <h3>January 3, 1997 - May 19, 2005</h3>
@@ -499,7 +552,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Jasmine.png" />
+        <img class="image" src="pictures/Pets/Jasmine.png" />
 
         <h3>In Loving Memory of Jasmine</h3>
       </section>
@@ -508,7 +561,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Murphy.png" />
+        <img class="image" src="pictures/Pets/Murphy.png" />
 
         <h3>Murphy</h3>
         <h3>1990-2006</h3>
@@ -538,7 +591,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Max.png" />
+        <img class="image" src="pictures/Pets/Max.png" />
 
         <h3>Max</h3>
         <h3>1991 - 2006</h3>
@@ -563,7 +616,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Tasha.png" />
+        <img class="image" src="pictures/Pets/Tasha.png" />
 
         <h3>Tasha</h3>
         <h3>1987 - 2007</h3>
@@ -586,7 +639,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Lady.png" />
+        <img class="image" src="pictures/Pets/Lady.png" />
 
         <h3>Lady</h3>
         <h3>1989 - 2007</h3>
@@ -598,7 +651,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Zeb.png" />
+        <img class="image" src="pictures/Pets/Zeb.png" />
 
         <h3>IN LOVING MEMORY OF ZEB Our 9 ½ Year Old GENTLE GIANT</h3>
         <h3></h3>
@@ -635,7 +688,7 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Zack.png" />
+        <img class="image" src="pictures/Pets/Zack.png" />
 
         <h3>Tribute To Our Zack</h3>
         <h3>1994 to 2007</h3>
@@ -661,24 +714,23 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Zeke.png" />
+        <img class="image" src="pictures/Pets/Zeke.png" />
 
         <h3>Tribute To Our Zeke</h3>
         <h3>1994 to 2008</h3>
 
-        <p>Zeke was loving, beautiful both inside and out, and our first of the boys to come into our home. He enriched
-          our lives -
-          first to arrive and the last to leave - our hearts were empty but alive with memories! ZEKE was a best big
-          buddy to ZACK
-          and a best little friend to ZEB and to all of us in his family.
-
-          Until November 2008 the three buddies included ZEKE, his younger brother ZACK, and ZEB. ZACK left us in May
-          ZEB left us
-          in June.
-
-          Watching our boys play was magic - then they would all lay down for a long nap till the next round. We miss
-          you ZEKE but
-          know you are in a good safe place with ZEB and ZACK now looking out for you once more!</p>
+        <p>
+          Zeke was loving, beautiful both inside and out, and our first of the
+          boys to come into our home. He enriched our lives - first to arrive
+          and the last to leave - our hearts were empty but alive with
+          memories! ZEKE was a best big buddy to ZACK and a best little friend
+          to ZEB and to all of us in his family. Until November 2008 the three
+          buddies included ZEKE, his younger brother ZACK, and ZEB. ZACK left
+          us in May ZEB left us in June. Watching our boys play was magic -
+          then they would all lay down for a long nap till the next round. We
+          miss you ZEKE but know you are in a good safe place with ZEB and
+          ZACK now looking out for you once more!
+        </p>
 
         <p>Our Love Always, Val and Ken Waldbauer</p>
       </section>
@@ -687,95 +739,83 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Buddy.png" />
+        <img class="image" src="pictures/Pets/Buddy.png" />
 
         <h3>Buddy 'Kat'</h3>
         <h3>June 16th/1998-April21/2008</h3>
 
-        <p>' When someone you Love
-          becomes a memory.
-          That memory
-          becomes a treasure.'
-          We miss you Buddy 'k'. A good friend</p>
+        <p>
+          ' When someone you Love becomes a memory. That memory becomes a
+          treasure.' We miss you Buddy 'k'. A good friend
+        </p>
       </section>
 
       <br />
       <br />
 
       <section>
-        <img src="pictures/Pets/Willow.png" />
+        <img class="image" src="pictures/Pets/Willow.png" />
 
         <h3>Willow</h3>
         <h3>1993-2009</h3>
 
-        <p>She is gone from our sight…but never our memory,
-          gone from our hearing…but never our hearts,
-          gone from our touch…but her presence is felt,
-          and the love that she gave us
-          never departs</p>
+        <p>
+          She is gone from our sight…but never our memory, gone from our
+          hearing…but never our hearts, gone from our touch…but her presence
+          is felt, and the love that she gave us never departs
+        </p>
       </section>
 
       <br />
       <br />
 
       <section>
-        <img src="pictures/Pets/Pinky.png" />
+        <img class="image" src="pictures/Pets/Pinky.png" />
 
         <h3>Pinky</h3>
 
-        <p>I got Pinky when I was six years old and she was just a kitten. We grew up in the small town of Lowe Farm and
-          later
-          moved to Morris and Winnipeg. Pinky's last home was in Steinbach. She passed on March 16, 2009 at the age of
-          19. Pinky
-          had kidney disease. Pinky was a very quiet, polite and independent cat. When she was young, she had a lot of
-          kittens and
-          she loved having kittens. It was her biggest joy in life. She also liked to eat a lot. She didn't play much
-          but when she
-          did, it was that much more special. Her favorite toys were bouncy balls from those vending machines. Pinky
-          always had
-          her tounge out, like she forgot to but it back in her mouth after bathing. It was one of the reasons for her
-          name. Pinky
-          was and still is everything to me. When other people would be out doing whatever it is people do, I would be
-          hanging out
-          with my child, my best friend and the love of my life and never wished it to be any other way. She made my
-          life whole,
-          content and happy. She showed me that the meaning to life is love, the unconditional love that we share. I
-          have always
-          and will always love her more than words could possibly begin to express. You are my sunshine Pinky and I love
-          you very
-          much.</p>
+        <p>
+          I got Pinky when I was six years old and she was just a kitten. We
+          grew up in the small town of Lowe Farm and later moved to Morris and
+          Winnipeg. Pinky's last home was in Steinbach. She passed on March
+          16, 2009 at the age of 19. Pinky had kidney disease. Pinky was a
+          very quiet, polite and independent cat. When she was young, she had
+          a lot of kittens and she loved having kittens. It was her biggest
+          joy in life. She also liked to eat a lot. She didn't play much but
+          when she did, it was that much more special. Her favorite toys were
+          bouncy balls from those vending machines. Pinky always had her
+          tounge out, like she forgot to but it back in her mouth after
+          bathing. It was one of the reasons for her name. Pinky was and still
+          is everything to me. When other people would be out doing whatever
+          it is people do, I would be hanging out with my child, my best
+          friend and the love of my life and never wished it to be any other
+          way. She made my life whole, content and happy. She showed me that
+          the meaning to life is love, the unconditional love that we share. I
+          have always and will always love her more than words could possibly
+          begin to express. You are my sunshine Pinky and I love you very
+          much.
+        </p>
 
         <br />
 
-        <p>Pinky in my pocket:
-        </p>
+        <p>Pinky in my pocket:</p>
 
         <p>
-          Pinky was sick
-          so I let her go home
-          now I keep her in my pocket
-          so I am not alone
+          Pinky was sick so I let her go home now I keep her in my pocket so I
+          am not alone
           <br />
-          I keep Pinky in my book
-          so she is there when I read
+          I keep Pinky in my book so she is there when I read
           <br />
-          and when I am finished
-          she is the last thing that I see
+          and when I am finished she is the last thing that I see
           <br />
-          I keep Pinky in my purse
-          because I always have it with me
-          I take her out to show the world
-          so her beauty they can too see
+          I keep Pinky in my purse because I always have it with me I take her
+          out to show the world so her beauty they can too see
           <br />
-          I keep Pinky on my nightstand
-          so I can tell her goodnight
-          and in the morning when I wake up
-          she is the first thing in my sight
+          I keep Pinky on my nightstand so I can tell her goodnight and in the
+          morning when I wake up she is the first thing in my sight
           <br />
-          I keep Pinky in my heart
-          because without her it would not beat
-          everything else life can take away
-          but Pinky in my heart I will keep
+          I keep Pinky in my heart because without her it would not beat
+          everything else life can take away but Pinky in my heart I will keep
         </p>
 
         <p>Tania C. Friesen</p>
@@ -785,60 +825,66 @@
       <br />
 
       <section>
-        <img src="pictures/Pets/Marty.png" />
+        <img class="image" src="pictures/Pets/Marty.png" />
 
         <h3>Marty</h3>
         <h3>Born:January 1,1995 to July 12/2009</h3>
 
-        <p>Our baby boy "Marty" was a beautiful loving cat. We were together for 14 wonderful years. Due to an illness
-          we saw you
-          suffering, so we decided to say our good-byes. It broke our hearts to leave you go, but you will always be
-          remembered
-          forever. Our dear baby boy you will never be replaced, and always be in our hearts.</p>
+        <p>
+          Our baby boy "Marty" was a beautiful loving cat. We were together
+          for 14 wonderful years. Due to an illness we saw you suffering, so
+          we decided to say our good-byes. It broke our hearts to leave you
+          go, but you will always be remembered forever. Our dear baby boy you
+          will never be replaced, and always be in our hearts.
+        </p>
 
-        <p>With lots of <br />
+        <p>
+          With lots of <br />
           Mommy and Daddy<br />
           and family<br />
-          xxxxx</p>
+          xxxxx
+        </p>
       </section>
 
       <br />
       <br />
 
       <section>
-        <img src="pictures/Pets/Dusty Stevens.png" />
+        <img class="image" src="pictures/Pets/Dusty Stevens.png" />
 
         <h3>Dusty Stevens</h3>
         <h3>July, 1992- January 10, 2010</h3>
 
-        <p>You were a member of our family for so very long - so full of life, energy and cuddles. We miss seeing you at
-          the door,
-          waiting to greet us and to make your escape into the fresh air. You were committed to staying with us,
-          outliving two
-          companions and even making your way safely home after being lost outside for two weeks. Even in the end, you
-          were so
-          strong to last for as long as you did. We are glad you are no longer suffering, but will love you and miss you
-          always.</p>
+        <p>
+          You were a member of our family for so very long - so full of life,
+          energy and cuddles. We miss seeing you at the door, waiting to greet
+          us and to make your escape into the fresh air. You were committed to
+          staying with us, outliving two companions and even making your way
+          safely home after being lost outside for two weeks. Even in the end,
+          you were so strong to last for as long as you did. We are glad you
+          are no longer suffering, but will love you and miss you always.
+        </p>
       </section>
 
       <br />
       <br />
 
       <section>
-        <img src="pictures/Pets/Nala Stevens.png" />
+        <img class="image" src="pictures/Pets/Nala Stevens.png" />
 
         <h3>Nala Stevens</h3>
         <h3>1996 - February 14, 2008</h3>
 
-        <p>Rescued by Mommy Sandi you started off so tiny, but you grew into a little chubbster with a lot of love and a
-          lot of
-          nibbling. You were so cute with your “baby” and your short little legs kicked up in the air for a belly rub.
-          You were
-          cuddly - on your terms - and a great pal to Felix. Always easily spooked, you ventured outside only at night,
-          to safely
-          chase the bugs and never went far. It was difficult to lose you so suddenly, and we wanted to hold on longer,
-          but we
-          knew we had to spare you the pain. We miss you and love you!</p>
+        <p>
+          Rescued by Mommy Sandi you started off so tiny, but you grew into a
+          little chubbster with a lot of love and a lot of nibbling. You were
+          so cute with your “baby” and your short little legs kicked up in the
+          air for a belly rub. You were cuddly - on your terms - and a great
+          pal to Felix. Always easily spooked, you ventured outside only at
+          night, to safely chase the bugs and never went far. It was difficult
+          to lose you so suddenly, and we wanted to hold on longer, but we
+          knew we had to spare you the pain. We miss you and love you!
+        </p>
       </section>
 
       <br />

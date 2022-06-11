@@ -10,20 +10,43 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
   <style>
+    /* styles the paragraph tags */
     p {
+      /* 
+        adds 1% margin to top and bottom and 14% on the left and right
+      */
       margin: 1% 14%;
+      /* aligns text to center of the container */
       text-align: center;
     }
 
+    /* styles the h3 tags */
     h3 {
+      /* aligns text to center of the container */
       text-align: center;
-      margin: 0 20%;
+      /* 
+        adds 0 margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
+      margin: 0 auto;
     }
 
+    /* styles all of the images */
     .image {
+      /* 
+        adds 0 margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
       margin: 1% auto;
+      /* makes the container a block element */
       display: block;
 
+      /* 
+        defines the details of the fade in animation
+        1. animation name
+        2. animation type
+        3. how long the animation takes
+      */
       -webkit-animation: fadeInAnimation ease-in-out 5s;
       -moz-animation: fadeInAnimation ease-in-out 5s;
       -o-animation: fadeInAnimation ease-in-out 5s;
@@ -38,41 +61,57 @@
       animation-fill-mode: forwards;
     }
 
+    /* defines the status of the frames when the animation is running */
     @-webkit-keyframes fadeInAnimation {
+
+      /* when the animation starts/ when the animation is at 0% the opacity is at 0*/
       0% {
         opacity: 0;
       }
 
+      /* when the animation ends/ when the animation is at 100% the opacity is at 1*/
       100% {
         opacity: 1;
       }
     }
 
+    /* defines the status of the frames when the animation is running */
     @-moz-keyframes fadeInAnimation {
+
+      /* when the animation starts/ when the animation is at 0% the opacity is at 0*/
       0% {
         opacity: 0;
       }
 
+      /* when the animation ends/ when the animation is at 100% the opacity is at 1*/
       100% {
         opacity: 1;
       }
     }
 
+    /* defines the status of the frames when the animation is running */
     @-o-keyframes fadeInAnimation {
+
+      /* when the animation starts/ when the animation is at 0% the opacity is at 0*/
       0% {
         opacity: 0;
       }
 
+      /* when the animation ends/ when the animation is at 100% the opacity is at 1*/
       100% {
         opacity: 1;
       }
     }
 
+    /* defines the status of the frames when the animation is running */
     @keyframes fadeInAnimation {
+
+      /* when the animation starts/ when the animation is at 0% the opacity is at 0*/
       0% {
         opacity: 0;
       }
 
+      /* when the animation ends/ when the animation is at 100% the opacity is at 1*/
       100% {
         opacity: 1;
       }

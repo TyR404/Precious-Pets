@@ -10,32 +10,57 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
   <style>
+    /* styles the paragraph tags */
     p {
+      /* 
+        adds 1% margin to top and bottom and 14% on the left and right
+      */
       margin: 1% 14%;
-      text-align: left;
+      /* aligns text to center of the container */
+      text-align: center;
     }
 
+    /* styles the h3 tags */
     h3 {
+      /* aligns text to center of the container */
       text-align: center;
-      margin: 0 20%;
+      /* 
+        adds 0 margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
+      margin: 0 auto;
     }
 
+    /* styles the pdf anchor tag (link) */
     #pdf>a {
+      /* makes the border colour inherit the defined colour from the stylesheet */
       color: inherit;
+      /* defines that there is no text decoration automatically added to the anchor tag (link) */
       text-decoration: none;
+      /* sets the anchor tag (link) to be an inline-block element */
       display: inline-block;
+      /* 
+        adds 0 margin to top and bottom and 41.5% on the left and right
+      */
       margin: 0 41.5%;
+      /* 
+        sets 1% padding (space inside the element) on the top and botom and 2% on the left and right
+       */
       padding: 1% 2%;
+      /* aligns text to center of the container */
       text-align: center;
+      /* sets the width of the container to be 15% of the screen */
       width: 15%;
+      /* adds an underine under the text */
       text-decoration: underline;
     }
 
-
+    /* styles the pdf anchor tag (link) when its being hovered/focused on*/
     #pdf>a:hover,
     #pdf>a:focus {
-      text-decoration: underline;
+      /* sets the background colour of the container to be a dark grey */
       background-color: #121212;
+      /* sets the text colour to a light grey */
       color: #ebebeb;
     }
   </style>

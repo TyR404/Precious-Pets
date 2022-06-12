@@ -14,10 +14,9 @@
     /* styles the paragraph tags */
     p {
       /* 
-        adds 1% margin to top and bottom and automatically sets 
-        the margins on the left and right to be equal
+        adds 1% margin to top and bottom and 14% on the right and left
       */
-      margin: 1% auto;
+      margin: 1% 14%;
       /* aligns text to left of the container */
       text-align: left;
     }
@@ -31,69 +30,6 @@
         the margins on the left and right to be equal
       */
       margin: 0 auto;
-    }
-
-    /* styles the whole business hours section */
-    #business-hours {
-      /* makes everything in the business hours section a flexible container */
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
-
-    /* styles the days section */
-    #days {
-      /* automatically sets the margin on the left side */
-      margin-left: auto;
-      /* sets the width of the container to 10% of the screen */
-      width: 10%;
-
-      /* sets the days section to display the content in a column */
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-box-orient: vertical;
-      -moz-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-
-      /* makes the border colour inherit the defined colour from the stylesheet */
-      border-color: inherit;
-
-      /* sets the top border to 2 pixels thick and solid */
-      border-top: 2px solid;
-      /* sets the left border to 2 pixels thick and solid */
-      border-left: 2px solid;
-      /* sets the bottom border to 2 pixels thick and solid */
-      border-bottom: 2px solid;
-    }
-
-    #hours {
-      /* automatically sets the margin on the left side */
-      margin-right: auto;
-      /* sets the width of the container to 10% of the screen */
-      width: 10%;
-
-      /* sets the days section to display the content in a column */
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-box-orient: vertical;
-      -moz-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-
-      /* makes the border colour inherit the colour from the stylesheet */
-      border-color: inherit;
-
-      /* sets the top border to 2 pixels thick and solid */
-      border-top: 2px solid;
-      /* sets the left border to 2 pixels thick and solid */
-      border-right: 2px solid;
-      /* sets the bottom border to 2 pixels thick and solid */
-      border-bottom: 2px solid;
     }
   </style>
 </head>
@@ -145,22 +81,6 @@
       <br />
 
       <h3>business Hours</h3>
-
-      <br />
-
-      <section id="business-hours">
-        <div id="days">
-          <p> Mon - Fri:</p>
-          <p>Saturday:</p>
-          <p>Sunday:</p>
-        </div>
-
-        <div id="hours">
-          <p> 8am - 6pm</p>
-          <p>8am - 12pm</p>
-          <p>12pm - 6pm</p>
-        </div>
-      </section>
 
       <br />
       <br />

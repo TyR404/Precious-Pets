@@ -32,32 +32,39 @@
     }
 
     /* styles the pdf anchor tag (link) */
-    #pdf>a {
+    #pdf {
       /* makes the border colour inherit the defined colour from the stylesheet */
       color: inherit;
       /* defines that there is no text decoration automatically added to the anchor tag (link) */
       text-decoration: none;
       /* sets the anchor tag (link) to be an inline-block element */
-      display: inline-block;
+      display: block;
       /* 
-        adds 0 margin to top and bottom and 41.5% on the left and right
+        adds 1% margin to top and bottom and automatically sets 
+          the margins on the left and right to be equal
       */
-      margin: 0 41.5%;
+      margin: 1% auto;
       /* 
-        sets 1% padding (space inside the element) on the top and botom and 2% on the left and right
+        sets 2% padding (space inside the element) to all sides
        */
-      padding: 1% 2%;
+      padding: 2%;
       /* aligns text to center of the container */
       text-align: center;
-      /* sets the width of the container to be 15% of the screen */
-      width: 15%;
+      /* sets the width of the container to fit inside the container perfectly */
+      width: fit-content;
       /* adds an underine under the text */
       text-decoration: underline;
+      /* defines the size of the text */
+      font-size: 20px;
+      /* defines the weight of the text */
+      font-weight: bold;
+      /* aligns text to the center of the container */
+      text-align: center;
     }
 
-    /* styles the pdf anchor tag (link) when its being hovered/focused on*/
-    #pdf>a:hover,
-    #pdf>a:focus {
+    /* styles the pdf link when its being hovered/focused on*/
+    #pdf:hover,
+    #pdf:focus {
       /* sets the background colour of the container to be a dark grey */
       background-color: #121212;
       /* sets the text colour to a light grey */
@@ -247,8 +254,8 @@
 
       <br />
 
-      <section id="pdf">
-        <a href="Documents/Precious Pet PDF.pdf" target="_blank"><b>Precious Pet Handbook</b></a>
+      <section>
+        <a id="pdf" href="Documents/Precious Pet PDF.pdf" target="_blank"><b>Precious Pet Handbook</b></a>
       </section>
 
       <br />

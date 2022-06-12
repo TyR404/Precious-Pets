@@ -226,6 +226,8 @@ body {
 /* styles the reveal animation */
 .block-reveal {
   /* calculates variable --t */
+  --t: -webkit-calc(var(--td) + var(--d));
+  --t: -moz-calc(var(--td) + var(--d));
   --t: calc(var(--td) + var(--d));
 
   /* sets the colour to transparent */
@@ -237,6 +239,9 @@ body {
   overflow: hidden;
 
   /* defines the animation details */
+  -webkit-animation: revealBlock 0s var(--t) forwards;
+  -moz-animation: revealBlock 0s var(--t) forwards;
+  -o-animation: revealBlock 0s var(--t) forwards;
   animation: revealBlock 0s var(--t) forwards;
 }
 
@@ -262,101 +267,303 @@ body {
   /* sets background to be variable --bc */
   background: var(--bc);
   /* defines animation details */
+  -webkit-animation: revealingIn var(--td) var(--d) forwards,
+    revealingOut var(--td) var(--t) forwards;
+  -moz-animation: revealingIn var(--td) var(--d) forwards,
+    revealingOut var(--td) var(--t) forwards;
+  -o-animation: revealingIn var(--td) var(--d) forwards,
+    revealingOut var(--td) var(--t) forwards;
   animation: revealingIn var(--td) var(--d) forwards,
     revealingOut var(--td) var(--t) forwards;
 }
 
+/* defines the state of the frames in the animation */
+@-webkit-keyframes revealBlock {
+  /* when at 100%, the reveal is a dark grey */
+  100% {
+    color: #121212;
+  }
+}
+@-moz-keyframes revealBlock {
+  /* when at 100%, the reveal is a dark grey */
+  100% {
+    color: #121212;
+  }
+}
+@-o-keyframes revealBlock {
+  /* when at 100%, the reveal is a dark grey */
+  100% {
+    color: #121212;
+  }
+}
 @keyframes revealBlock {
+  /* when at 100%, the reveal is a dark grey */
   100% {
     color: #121212;
   }
 }
 
-@keyframes revealingIn {
+/* defines the state of the frames in the animation */
+@-webkit-keyframes revealingIn {
+  /* when at 0% of the animation, the width of the reveal is 0 */
   0% {
     width: 0;
   }
 
+  /* when at 100% of the animation, the width of the reveal is 100% */
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes revealingIn {
+  /* when at 0% of the animation, the width of the reveal is 0 */
+  0% {
+    width: 0;
+  }
+
+  /* when at 100% of the animation, the width of the reveal is 100% */
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes revealingIn {
+  /* when at 0% of the animation, the width of the reveal is 0 */
+  0% {
+    width: 0;
+  }
+
+  /* when at 100% of the animation, the width of the reveal is 100% */
+  100% {
+    width: 100%;
+  }
+}
+@keyframes revealingIn {
+  /* when at 0% of the animation, the width of the reveal is 0 */
+  0% {
+    width: 0;
+  }
+
+  /* when at 100% of the animation, the width of the reveal is 100% */
   100% {
     width: 100%;
   }
 }
 
-@keyframes revealingOut {
+/* defines the state of the frames in the animation */
+@-webkit-keyframes revealingOut {
+  /* when at 0% of the animation, the position change of x in the reveal is 0 */
   0% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
+  /* when at 100% of the animation, the position change of x in the reveal is 100% */
   100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@-moz-keyframes revealingOut {
+  /* when at 0% of the animation, the position change of x in the reveal is 0 */
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* when at 100% of the animation, the position change of x in the reveal is 100% */
+  100% {
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@-o-keyframes revealingOut {
+  /* when at 0% of the animation, the position change of x in the reveal is 0 */
+  0% {
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* when at 100% of the animation, the position change of x in the reveal is 100% */
+  100% {
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@keyframes revealingOut {
+  /* when at 0% of the animation, the position change of x in the reveal is 0 */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* when at 100% of the animation, the position change of x in the reveal is 100% */
+  100% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
 
+/* styles the back to top section */
 #back-to-top {
+  /* sets the position to be fixed in place */
   position: fixed;
+  /* sets left to be 5 pixels */
   left: 5px;
+  /* sets bottom to be 5 pixels */
   bottom: 5px;
+
+  /* sets the section to be a flexible container */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+
+  /* sets the items in the section to be in the center of the section */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  /* sets the items in the section to be in the center of the section */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
+  /* sets the width to be 50 pixels */
   width: 50px;
+  /* sets the height to be 50 pixels */
   height: 50px;
+  /* sets the border radius to 25 pixels */
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   border-radius: 25px;
 
+  /* sets the background to a radial gradient that is a dark grey */
   background: -o-radial-gradient(#121212, #1f1f1f);
   background: -moz-radial-gradient(#121212, #1f1f1f);
   background: -webkit-radial-gradient(#121212, #1f1f1f);
   background: radial-gradient(#121212, #1f1f1f);
-  color: whitesmoke;
-  text-shadow: 0px 1px 1px #121212, 0px 1.5px 1px #121212;
+  /* sets the text colour to a light grey */
+  color: #ebebeb;
+  /* defines that there is no text decoration */
   text-decoration: none;
+  /* aligns the text to the center of the container */
   text-align: center;
 }
 
+/* styles the back to top section */
 #contact {
+  /* sets the position to be fixed in place */
   position: fixed;
+  /* sets right to be 5 pixels */
   right: 5px;
+  /* sets bottom to be 5 pixels */
   bottom: 5px;
+
+  /* sets the section to be a flexible container */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+
+  /* sets the items in the section to be in the center of the section */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  /* sets the items in the section to be in the center of the section */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
+  /* sets the width to be 100 pixels */
   width: 100px;
+  /* sets the height to be 50 pixels */
   height: 50px;
+  /* sets the border radius to 25 pixels */
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   border-radius: 25px;
 
+  /* sets the background to a radial gradient that is a dark grey */
   background: -o-radial-gradient(#121212, #1f1f1f);
   background: -moz-radial-gradient(#121212, #1f1f1f);
   background: -webkit-radial-gradient(#121212, #1f1f1f);
   background: radial-gradient(#121212, #1f1f1f);
-  color: whitesmoke;
-  text-shadow: 0px 1px 1px #121212, 0px 1.5px 1px #121212;
+  /* sets the text colour to a light grey */
+  color: #ebebeb;
+  /* defines that there is no text decoration */
   text-decoration: none;
+  /* aligns the text to the center of the container */
   text-align: center;
 }
 
+/* styles the footer */
 footer {
+  /*  
+    adds margin: 4 view height on the top, 10% on the right,
+    6 view height on the bottom, 10% on the left 
+  */
   padding: 4vh 10% 6vh 10%;
 
+  /* sets background colour to a dark grey */
   background: #121212;
+  /* sets the text colour to a light grey */
   color: #ebebeb;
+  /* sets the text size to 20 pixels */
   font-size: 20px;
 }
 
+/* styles the social section */
 #social {
+  /* sets the section to be a flexible container */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  /* sets the width to 20 pixels */
   width: 20px;
+  /* sets the heigh to 20 pixels */
   height: 20px;
+  /* moves the content left */
   float: left;
+  /* 
+    sets the margin on the top and bottom to 0,
+     sets the margin on the left and right to 50% 
+   */
   margin: 0 50%;
 }
 
 footer > p {
+  /* moves the content to the right */
   float: right;
+
+  /* sets the section to be a flexible container */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  /* aligns the text to be in the center of the section */
   text-align: center;
+  /* sets the margin on the right to 50% */
   margin-right: 50%;
+  /* sets the text size to 20 pixe;s */
   font-size: 20px;
+  /* defines the font of the text */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

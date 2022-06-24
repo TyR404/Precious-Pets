@@ -205,8 +205,6 @@ a {
       then it leaves 2.5 pixels of space between links
     */
     width: calc(calc(100% / 4) - 2.5px);
-    /* adds 1% padding to the top and bottom and adds 0 to the right and left */
-    padding: 1% 0;
     /* sets the text size to be 20 pixels */
     font-size: 20px;
   }

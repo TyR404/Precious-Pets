@@ -12,10 +12,10 @@
 #logo {
   /* moves the logo left */
   float: left;
-  /* sets the width to 87 pixels */
-  width: 87px;
-  /* sets the height to 102.8 pixels */
-  height: 102.8px;
+  /* sets the width to 108.75 pixels */
+  width: 108.75px;
+  /* sets the height to 128.5 pixels */
+  height: 128.5px;
   /*  sets the margin on the left to 1%, the margin on the right to 0,
       the margin on the bottom to 0 and the margin on the left to 2% 
   */
@@ -155,25 +155,30 @@ a {
   text-decoration: none;
 }
 
-/* styles things when the screen size gets below 1040 pixels */
-@media (max-width: 1040px) {
+/* styles things when the screen size gets below 1225 pixels */
+@media (max-width: 1225px) {
   /* styles the logo */
   #logo {
-    /* sets the width to 73.5 pixels */
-    width: 73.5px;
-    /* sets the height to 81.4 pixels */
-    height: 81.4px;
+    /* sets the width to 96.7 pixels */
+    width: 96.7px;
+    /* sets the height to 114.3 pixels */
+    height: 114.3px;
   }
 }
 
-/* styles things when the screen size gets below 940 pixels */
-@media (max-width: 940px) {
+/* styles things when the screen size gets below 975 pixels */
+@media (max-width: 975px) {
   /* styles the logo */
   #logo {
     /* sets the margin on the left to be 5% */
     margin-left: 5%;
-    /* sets the margin on the top to be 1% */
-    margin-top: 1%;
+    /* sets the margin on the top to be 1.5% */
+    margin-top: 1.5%;
+
+    /* sets the width to 72.5 pixels */
+    width: 72.5px;
+    /* sets the height to 85.7 pixels */
+    height: 85.7px;
   }
 
   /* styles the un-ordered list in the navigation bar  */
@@ -210,6 +215,32 @@ a {
   nav {
     /* sets the position to be relative */
     position: relative;
+  }
+}
+
+/* styles things when the screen size gets below 530 pixels */
+@media (max-width: 530px) {
+  /* styles the h1 */
+  h1 {
+    /* sets the margin to be 0 */
+    margin: 0;
+    /* sets the padding on the top to be 7% */
+    padding-top: 7%;
+    /* sets the padding on the bottom to be 7% */
+    padding-bottom: 7%;
+  }
+
+  /* styles the logo */
+  #logo {
+    /* sets the margin on the left to be 5% */
+    margin-left: 5%;
+    /* sets the margin on the top to be 3% */
+    margin-top: 3%;
+
+    /* sets the width to 72.5 pixels */
+    width: 72.5px;
+    /* sets the height to 85.7 pixels */
+    height: 85.7px;
   }
 }
 

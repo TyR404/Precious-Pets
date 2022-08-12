@@ -10,95 +10,21 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
   <style>
-    /* styles the paragraph tags */
-    p {
-      /* 
-        adds 1% margin to top and bottom and 14% on the left and right
+    /* 
+        adds margin to bottom of h3 (4% of screen)
       */
-      margin: 1% 14%;
-      /* aligns text to center of the container */
-      text-align: center;
-    }
-
-    /* styles the h2 tags */
-    h2 {
-      /*  adds 5% margin on the top and bottom and automatically sets 
-          the margins on the left and right to be equal  
-      */
-      margin: 5% auto;
-    }
-
-    /* styles the h3 tags */
     h3 {
+      margin-bottom: 4%;
       /* aligns text to center of the container */
       text-align: center;
-      /* 
-        adds 0 margin to top and bottom and automatically sets 
-        the margins on the left and right to be equal
-      */
-      margin: 0 auto;
     }
 
-    /* styles the pdf anchor tag (link) */
-    #pdf {
-      /* makes the border colour inherit the defined colour from the stylesheet */
-      color: inherit;
-      /* defines that there is no text decoration automatically added to the anchor tag (link) */
-      text-decoration: none;
-      /* sets the anchor tag (link) to be an inline-block element */
-      display: block;
-      /* 
-        adds 1% margin to top and bottom and automatically sets 
-          the margins on the left and right to be equal
+    /* 
+        sets all images to have a width of 35% of the screen
       */
-      margin: 1% auto;
-      /* 
-        sets 3% padding (space inside the element) to all sides
-       */
-      padding: 3%;
-      /* aligns text to center of the container */
-      text-align: center;
-      /* sets the width of the container to fit inside the container perfectly */
-      width: fit-content;
-      /* adds an underine under the text */
-      text-decoration: underline;
-      /* defines the size of the text */
-      font-size: 20px;
-      /* defines the weight of the text */
-      font-weight: bold;
-      /* aligns text to the center of the container */
-      text-align: center;
-    }
+    .urns {
+      width: 35%;
 
-    /* styles the pdf anchor tag (link) when its being hovered/focused on*/
-
-    #pdf:hover,
-    #pdf:focus {
-      /* sets the background colour of the container to be a dark grey */
-      background-color: #121212;
-      /* sets the text colour to a light grey */
-      color: #ebebeb;
-    }
-
-
-
-    /* styles all of the images */
-    #urn-image {
-      width: 100%;
-      /* 
-        adds 0 margin to top and bottom and automatically sets 
-        the margins on the left and right to be equal
-      */
-      margin: 1% auto;
-      /* makes the container a block element */
-      display: block;
-
-      /* 
-        defines the details of the fade in animation
-        1. animation name
-        2. animation type
-        3. how long the animation takes
-      */
       -webkit-animation: fadeInAnimation ease-in-out 4s;
       -moz-animation: fadeInAnimation ease-in-out 4s;
       -o-animation: fadeInAnimation ease-in-out 4s;
@@ -111,6 +37,97 @@
       -moz-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
+    }
+
+    .images {
+
+      /* 
+        adds margin to top of images (1% of screen)
+      */
+      margin-top: 1%;
+      /* 
+          makes images a flexible container
+        */
+      display: flex;
+      /* 
+        sets images to have a height of 50% of the screen
+        */
+      height: 50%;
+      /* 
+          spaces the images out evenly
+        */
+      justify-content: space-evenly;
+      /* 
+        sets all images to have a width of 100% of the section
+      */
+      width: 100%;
+    }
+
+    .names {
+      /* 
+        adds margin to top of images (1% of screen)
+      */
+      margin-top: 1%;
+      /* 
+          makes images a flexible container
+        */
+      display: flex;
+      /* 
+        sets images to have a height of 50% of the screen
+        */
+      height: 50%;
+      /* 
+          spaces the images out evenly
+        */
+      justify-content: space-evenly;
+      /* 
+        sets all images to have a width of 100% of the section
+      */
+      width: 100%;
+
+      text-align: center;
+    }
+
+    .test {
+      /* 
+          adds margin to the left of the text (20% of screen)
+        */
+      /* 
+          adds padding to the top of the text (1% of screen)
+        */
+      padding-top: 0.5%;
+      width: 35%;
+
+    }
+
+    .weights {
+      /* 
+        adds margin to top of images (1% of screen)
+      */
+      margin-top: 1%;
+      /* 
+          makes images a flexible container
+        */
+      display: flex;
+      /* 
+        sets images to have a height of 50% of the screen
+        */
+      height: 50%;
+      /* 
+          spaces the images out evenly
+        */
+      justify-content: space-evenly;
+      /* 
+        sets all images to have a width of 100% of the section
+      */
+      width: 100%;
+
+      text-align: center;
+
+    }
+
+    .weight {
+      width: 35%;
     }
 
     /* defines the status of the frames when the animation is running */
@@ -168,100 +185,11 @@
         opacity: 1;
       }
     }
-
-    /* styles the content section */
-    #content {
-      /* sets the items in the section to be flexible containers */
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
-
-    /* styles the column1 section */
-    #column1 {
-      /* sets the section to have a width of 50% of the page */
-      width: 50%;
-    }
-
-    /* styles the column2 section */
-    #column2 {
-      /* sets the section to have a width of 50% of the page */
-      width: 50%;
-    }
-
-    /* styles the page when it gets smaller than 900 pixels */
-    @media (max-width: 900px) {
-
-      /* styles the content section */
-      #content {
-        /* sets the section to display the content in a column */
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-box-orient: vertical;
-        -moz-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-
-        /* sets the width of the section to 100% of the webpage */
-        width: 100%;
-      }
-
-      /* stles the image */
-      #urn-image {
-        /* adds 3 pixels of margin to the top */
-        margin-top: 3px;
-      }
-
-      /* styles the column1 section */
-      #column1 {
-        /* defines that there is 1% margin on the top of the section */
-        margin-top: 1%;
-
-        /* sets the width of the section to 100% of the webpage */
-        width: 100%;
-        /* adds 0.5 pixels of padding to the top of the section */
-        padding-top: 0.5px;
-
-      }
-
-      /* styles the column2 section */
-      #column2 {
-        /* makes the content start a new line when the page size decreases */
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-
-        /* sets the section to be a block element */
-        display: block;
-
-        /* sets the width of the section to 100% of the webpage */
-        width: 100%;
-
-      }
-
-      /* styles the h2-style section */
-      #h2-style {
-        /* sets the section to have a width of 80% */
-        width: 80%;
-      }
-
-      /* 
-        defines that the h2 has 3% margin on the top and bottom and 20% on the left and right 
-      */
-      h2 {
-        margin: 3% 20%;
-      }
-
-    }
   </style>
 </head>
 
 <body>
   <header>
-    <a href="pictures/Logo.png"><img id="logo" src="pictures/Logo.png" alt="Precious Pet Logo" /></a>
     <a href="index.html">
       <h1 style="--td: 1.2s">Precious Pet</h1>
     </a>
@@ -282,38 +210,116 @@
   <main style="--td: 1.2s">
     <div class="block-reveal" style="--bc: #383838; --d: 0.1s">
 
-      <section id="content">
-        <div id="column1">
-          <img id="urn-image" src="pictures/Urns.png" alt="Rows of urns we offer" />
-        </div>
+      <h2 style="font-size: 36px; padding: 3% 0 2% 0;">Urn Gallery</h2>
 
-        <div id="column2" style="justify-items: center;">
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
 
-          <h2 style="font-size: 36px;">Urn Gallery</h2>
-
-
-          <p>To view a PDF with our selection of urns, click the link below</p>
-
-          <br />
-
-          <a id="pdf" href="documents/Urn Gallery.pdf" target="_blank">Click Here To View The Urns</a>
-        </div>
-
-
-
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
       </section>
-      <a href="#top" id="back-to-top">&#9651;</a>
-      <a href="contact.html" id="contact"> Contact Us</a>
+
+      <section>
+        <div class="names">
+          <h2 class="test">Urn Name</h2>
+
+          <h2 class="test">Urn Name</h2>
+        </div>
+
+        <div class="weights">
+          <h3 class="weight">Weight</h3>
+          <h3 class="weight">Weight</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="test">Urn Name</h2>
+
+          <h2 class="test">Urn Name</h2>
+        </div>
+
+        <div class="weights">
+          <h3 class="weight">Weight</h3>
+          <h3 class="weight">Weight</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="test">Urn Name</h2>
+
+          <h2 class="test">Urn Name</h2>
+        </div>
+
+        <!--
+          Website made entirely by Tyson Robinson
+        -->
+
+        <div class="weights">
+          <h3 class="weight">Weight</h3>
+          <h3 class="weight">Weight</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="test">Urn Name</h2>
+
+          <h2 class="test">Urn Name</h2>
+        </div>
+
+        <div class="weights">
+          <h3 class="weight">Weight</h3>
+          <h3 class="weight">Weight</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="test">Urn Name</h2>
+
+          <h2 class="test">Urn Name</h2>
+        </div>
+
+        <div class="weights">
+          <h3 class="weight">Weight</h3>
+          <h3 class="weight">Weight</h3>
+        </div>
+      </section>
+
     </div>
+    </section>
+    <a href="#top" id="back-to-top">&#9651;</a>
+    <a href="contact.html" id="contact"> Contact Us</a>
   </main>
 
   <footer>
-    <a href="https://www.facebook.com/PreciousPetMB" target="_blank"><img id="social" src="pictures/facebook-logo.png"
-        alt="Facebook Logo" /></a>
+
   </footer>
 </body>
-<!--
-  Website made entirely by Tyson Robinson
--->
 
 </html>

@@ -10,13 +10,18 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css" />
 
   <style>
+    h2 {
+      font-size: 30px;
+    }
+
     /* 
         adds margin to bottom of h3 (4% of screen)
       */
     h3 {
-      margin-bottom: 4%;
+
       /* aligns text to center of the container */
       text-align: center;
+
     }
 
     /* 
@@ -65,68 +70,109 @@
 
     .names {
       /* 
-        adds margin to top of images (1% of screen)
+        adds margin to top of text (1% of screen)
       */
       margin-top: 1%;
       /* 
-          makes images a flexible container
+          makes text a flexible container
         */
       display: flex;
+
       /* 
-        sets images to have a height of 50% of the screen
-        */
-      height: 50%;
-      /* 
-          spaces the images out evenly
+          spaces the text out evenly
         */
       justify-content: space-evenly;
       /* 
-        sets all images to have a width of 100% of the section
+        sets all text to have a width of 100% of the section
       */
       width: 100%;
 
+      /* 
+        aligns text to center of  container
+      */
       text-align: center;
     }
 
-    .test {
-      /* 
-          adds margin to the left of the text (20% of screen)
-        */
+    .name {
       /* 
           adds padding to the top of the text (1% of screen)
         */
       padding-top: 0.5%;
+
+      /* 
+        sets width to 35% of screen
+      */
       width: 35%;
 
     }
 
-    .weights {
+    .sizes {
       /* 
-        adds margin to top of images (1% of screen)
+        adds margin to top of text (1% of screen)
       */
       margin-top: 1%;
       /* 
-          makes images a flexible container
+          makes text a flexible container
         */
       display: flex;
+
       /* 
-        sets images to have a height of 50% of the screen
-        */
-      height: 50%;
-      /* 
-          spaces the images out evenly
+          spaces the text out evenly
         */
       justify-content: space-evenly;
       /* 
-        sets all images to have a width of 100% of the section
+        sets all text to have a width of 100% of the section
       */
       width: 100%;
 
+      /* 
+        aligns text to center of  container
+      */
       text-align: center;
 
     }
 
-    .weight {
+    .size {
+      /* 
+        sets width to 35% of screen
+      */
+      width: 35%;
+    }
+
+    .descriptions {
+      /* 
+        adds margin to top of text (1% of screen)
+      */
+      margin-top: 1%;
+      /* 
+          makes text a flexible container
+        */
+      display: flex;
+
+      /* 
+          spaces the text out evenly
+        */
+      justify-content: space-evenly;
+      /* 
+        sets all text to have a width of 100% of the section
+      */
+      width: 100%;
+
+      /* 
+        aligns text to center of  container
+      */
+      text-align: center;
+
+      /* 
+          adds margin to the bottom of the text (4% of screen)
+        */
+      margin-bottom: 4%;
+    }
+
+    .description {
+      /* 
+        sets width to 35% of screen
+      */
       width: 35%;
     }
 
@@ -220,33 +266,18 @@
 
       <section>
         <div class="names">
-          <h2 class="test">Urn Name</h2>
-
-          <h2 class="test">Urn Name</h2>
+          <h2 class="name">Copper PawPrint Round Urn</h2>
+          <h2 class="name">Silver PawPrint Round Urn</h2>
         </div>
 
-        <div class="weights">
-          <h3 class="weight">Weight</h3>
-          <h3 class="weight">Weight</h3>
-        </div>
-      </section>
-
-      <section class="images">
-        <img src="pictures/test-pic.png" alt="test image" class="urns" />
-
-        <img src="pictures/test-pic.png" alt="test image" class="urns" />
-      </section>
-
-      <section>
-        <div class="names">
-          <h2 class="test">Urn Name</h2>
-
-          <h2 class="test">Urn Name</h2>
+        <div class="sizes">
+          <h3 class="size">Sizes: S-M-L</h3>
+          <h3 class="size">Sizes: S-M-L</h3>
         </div>
 
-        <div class="weights">
-          <h3 class="weight">Weight</h3>
-          <h3 class="weight">Weight</h3>
+        <div class="descriptions">
+          <h3 class="description">Only the lids can be engraved</h3>
+          <h3 class="description">Only the lids can be engraved</h3>
         </div>
       </section>
 
@@ -258,33 +289,24 @@
 
       <section>
         <div class="names">
-          <h2 class="test">Urn Name</h2>
-
-          <h2 class="test">Urn Name</h2>
+          <h2 class="name">Blue Odyssey Round Urn</h2>
+          <h2 class="name">White Odyssey Round Urn</h2>
         </div>
 
-        <div class="weights">
-          <h3 class="weight">Weight</h3>
-          <h3 class="weight">Weight</h3>
-        </div>
-      </section>
-
-      <section class="images">
-        <img src="pictures/test-pic.png" alt="test image" class="urns" />
-
-        <img src="pictures/test-pic.png" alt="test image" class="urns" />
-      </section>
-
-      <section>
-        <div class="names">
-          <h2 class="test">Urn Name</h2>
-
-          <h2 class="test">Urn Name</h2>
+        <div class="sizes">
+          <h3 class="size">Sizes: S-M-L</h3>
+          <h3 class="size">Sizes: S-M-L</h3>
         </div>
 
-        <div class="weights">
-          <h3 class="weight">Weight</h3>
-          <h3 class="weight">Weight</h3>
+        <div class="descriptions">
+          <h3 class="description">
+            Trim and Paw Prints are Silver Only <br />
+            Plaque and Chain Engraving Only
+          </h3>
+          <h3 class="description">
+            Trim and Paw Prints are Silver Only <br />
+            Plaque and Chain Engraving Only
+          </h3>
         </div>
       </section>
 
@@ -296,16 +318,218 @@
 
       <section>
         <div class="names">
-          <h2 class="test">Urn Name</h2>
-
-          <h2 class="test">Urn Name</h2>
+          <h2 class="name">Camo Odyssey Round Urn</h2>
+          <h2 class="name">Pink Odyssey Round Urn</h2>
         </div>
 
-        <div class="weights">
-          <h3 class="weight">Weight</h3>
-          <h3 class="weight">Weight</h3>
+        <div class="sizes">
+          <h3 class="size">Sizes: S-M-L</h3>
+          <h3 class="size">Sizes: S-M-L</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">
+            Trim and Paw Prints are Silver Only <br />
+            Plaque and Chain Engraving Only
+          </h3>
+          <h3 class="description">
+            Trim and Paw Prints are Silver Only <br />
+            Plaque and Chain Engraving Only
+          </h3>
         </div>
       </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">Red Classic Pet Urn</h2>
+          <h2 class="name">Purple Classic Pet Urn</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: S-M-L-(XL-Special Order)</h3>
+          <h3 class="size">Sizes: S-M-L-(XL-Special Order)</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">Plaque and Chain Engraving Available Only</h3>
+          <h3 class="description">Plaque and Chain Engraving Available Only</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">Classic Paw Print Urns</h2>
+          <h2 class="name">Token Pet Urns</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size"> Sizes: S-M-L-XL </h3>
+          <h3 class="size">Sizes: S</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">
+            Engraving Available Directly on Urn! <br />
+            <br />
+            The only Paw Print Urns currently <u>not available</u> are the Copper Paw Print Heart Urns! <br />
+            All other copper urns are <u>available</u>!
+          </h3>
+          <h3 class="description">Token remembrance cremation urns are miniature urns that are designed to hold only a
+            small portion of ashes, or cremated
+            remains. <br />
+            These are the very smallest of urns, which make it possible for family members or friends to divide up the
+            cremated remains so that each person can have an urn. <br />
+          </h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">One Paw Print Heart Urn</h2>
+          <h2 class="name">Elite Cat Resin Urn</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: S</h3>
+          <h3 class="size">Sizes: </h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">
+            Colours: Silver-Slate-Gold-Copper <br />
+            The only Paw Print Urns currently <u>not available</u> are the Copper Paw Print Heart Urns! <br />
+            All other copper urns are <u>available</u>! <br />
+            Limited Engraving Available due to small size of urn!
+          </h3>
+          <h3 class="description">
+            Colours: Black-Fawn-Tabby-Sable <br />
+            Plaque and Chain Engraving Only Available
+          </h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">Cozy Cat Resin Urn</h2>
+          <h2 class="name">Silhouette Cat Brass Urn</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: </h3>
+          <h3 class="size">Sizes: S</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">
+            Colours: Black-Fawn-Sable-Tabby <br />
+            Plaque and Chain Engraving Only Available
+          </h3>
+          <h3 class="description">
+            Colours: Gray-Shale, Green-Fern, Blue-Country, Red-Sienna <br />
+            Engraving can be done directly on the standing cat only. <br />
+            Please remember it is s a very small area so limited engraving.
+          </h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">MDF Urns</h2>
+          <h2 class="name">MDF Urns with Picture Frames</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: XS-S-M-L</h3>
+          <h3 class="size">Sizes: XS-S-M-L</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">Available in; cherry, natural and bamboo colours</h3>
+          <h3 class="description">Available in; black, cherry and natural colours</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">Standard Mother of Pearl Urn with Engraving</h2>
+          <h2 class="name">Standard Black Urn with Engraving</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: </h3>
+          <h3 class="size">Sizes: </h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">Engraving is only available in one type of font</h3>
+          <h3 class="description">Engraving is only available in one type of font</h3>
+        </div>
+      </section>
+
+      <section class="images">
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+
+        <img src="pictures/test-pic.png" alt="test image" class="urns" />
+      </section>
+
+      <section>
+        <div class="names">
+          <h2 class="name">Standard Granite Stone Urns</h2>
+          <h2 class="name">Biodegradable Urns</h2>
+        </div>
+
+        <div class="sizes">
+          <h3 class="size">Sizes: </h3>
+          <h3 class="size">Sizes: S-L</h3>
+        </div>
+
+        <div class="descriptions">
+          <h3 class="description">
+            Colours: Sand-Slate-Southwest Sand-Serpentine <br />
+            These are Ceramic Urns with a textured finish. <br />
+            Engraving cannot be done on Granite Urns, <br />
+            But a chain and plaque can be Engraved and placed around the lid.
+          </h3>
+          <h3 class="description"></h3>
+        </div>
+      </section>
+
 
     </div>
     </section>

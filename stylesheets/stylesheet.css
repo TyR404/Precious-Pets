@@ -425,10 +425,6 @@ body {
   }
 }
 
-/*
-  Website made entirely by Tyson Robinson
-*/
-
 /* defines the state of the frames in the animation */
 @-webkit-keyframes revealingIn {
   /* when at 0% of the animation, the width of the reveal is 0 */

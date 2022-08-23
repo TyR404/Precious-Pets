@@ -28,7 +28,7 @@
         sets all images to have a width of 35% of the screen
       */
     .urns {
-      width: 35%;
+      width: 100%;
 
       -webkit-animation: fadeInAnimation ease-in-out 4s;
       -moz-animation: fadeInAnimation ease-in-out 4s;
@@ -42,6 +42,10 @@
       -moz-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
+    }
+
+    .click {
+      width: 35%;
     }
 
     .images {
@@ -231,6 +235,52 @@
         opacity: 1;
       }
     }
+
+
+    /* styles the phone number container */
+    .phone {
+      /* 
+        adds 1% margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
+      margin: 1% auto;
+      /* aligns text to center of the container */
+      text-align: center;
+      /* makes the container a block element */
+      display: block;
+      /* makes the text colour inherit the defined colour from the stylesheet */
+      color: inherit;
+    }
+
+    /* styles the email container */
+    .email {
+      /* 
+        adds 1% margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
+      margin: 1% auto;
+      /* aligns text to center of the container */
+      text-align: center;
+      /* makes the container a block element */
+      display: block;
+      /* makes the text colour inherit the defined colour from the stylesheet */
+      color: inherit;
+    }
+
+    /* styles the website container */
+    .website {
+      /* 
+        adds 1% margin to top and bottom and automatically sets 
+        the margins on the left and right to be equal
+      */
+      margin: 1% auto;
+      /* aligns text to center of the container */
+      text-align: center;
+      /* makes the container a block element */
+      display: block;
+      /* makes the text colour inherit the defined colour from the stylesheet */
+      color: inherit;
+    }
   </style>
 </head>
 
@@ -259,9 +309,13 @@
       <h2 style="font-size: 36px; padding: 3% 0 2% 0;">Urn Gallery</h2>
 
       <section class="images">
-        <img src="pictures/Urns/Copper-paws.jpg" alt="Copper Urn With PawPrints" class="urns" />
 
-        <img src="pictures/Urns/Silver-paws.jpg" alt="Silver Urn With PawPrints" class="urns" />
+        <a href="pictures/Urns/Copper-paws.jpg" class="click"><img src="pictures/Urns/Copper-paws.jpg"
+            alt="Copper Urn With PawPrints" class="urns" /></a>
+
+        <a href="pictures/Urns//Silver-paws.jpg" class="click"><img src="pictures/Urns/Silver-paws.jpg"
+            alt="Silver Urn With PawPrints" class="urns" />
+        </a>
       </section>
 
       <section>
@@ -282,9 +336,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Blue-odyssey.jpg" alt="Round Blue Urn" class="urns" />
+        <a href="pictures/Urns//Blue-odyssey.jpg" class="click"><img src="pictures/Urns/Blue-odyssey.jpg"
+            alt="Round Blue Urn" class="urns" /></a>
 
-        <img src="pictures/Urns/White-odyssey.jpg" alt="Round White Urn" class="urns" />
+        <a href="pictures/Urns/White-odyssey.jpg" class="click"><img src="pictures/Urns/White-odyssey.jpg"
+            alt="Round White Urn" class="urns" /></a>
       </section>
 
       <section>
@@ -301,19 +357,21 @@
         <div class="descriptions">
           <h3 class="description">
             Trim and Paw Prints are Silver Only <br />
-            Plaque and Chain Engraving Only
+            Plaque, lid, Chain Engraving Only
           </h3>
           <h3 class="description">
             Trim and Paw Prints are Silver Only <br />
-            Plaque and Chain Engraving Only
+            Plaque, lid, Chain Engraving Only
           </h3>
         </div>
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Camo-odyssey.jpg" alt="Round Camo Urn" class="urns" />
+        <a href="pictures/Urns/Camo-odyssey.jpg" class="click"><img src="pictures/Urns/Camo-odyssey.jpg"
+            alt="Round Camo Urn" class="urns" /></a>
 
-        <img src="pictures/Urns/Pink-odyssey.jpg" alt="Round Pink Urn" class="urns" />
+        <a href="pictures/Urns/Pink-odyssey.jpg" class="click"><img src="pictures/Urns/Pink-odyssey.jpg"
+            alt="Round Pink Urn" class="urns" /></a>
       </section>
 
       <section>
@@ -334,15 +392,17 @@
           </h3>
           <h3 class="description">
             Trim and Paw Prints are Silver Only <br />
-            Plaque and Chain Engraving Only
+            Plaque, lid, Chain Engraving Only
           </h3>
         </div>
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Red-classic.jpg" alt="Standard Red Urn" class="urns" />
+        <a href="pictures/Urns/Red-classic.jpg" class="click"><img src="pictures/Urns/Red-classic.jpg"
+            alt="Standard Red Urn" class="urns" /></a>
 
-        <img src="pictures/Urns/Purple-classic.jpg" alt="Standard Purple Urn" class="urns" />
+        <a href="pictures/Urns/Purple-classic.jpg" class="click"><img src="pictures/Urns/Purple-classic.jpg"
+            alt="Standard Purple Urn" class="urns" /></a>
       </section>
 
       <section>
@@ -363,9 +423,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Classic-paws.jpg" alt="Standard Urns with PawPrints" class="urns" />
+        <a href="pictures/Urns/Classic-paws.jpg" class="click"><img src="pictures/Urns/Classic-paws.jpg"
+            alt="Standard Urns with PawPrints" class="urns" /></a>
 
-        <img src="pictures/Urns/Token.jpg" alt="Smaller token Urns" class="urns" />
+        <a href="pictures/Urns/Token.jpg" class="click"><img src="pictures/Urns/Token.jpg" alt="Smaller token Urns"
+            class="urns" /></a>
       </section>
 
       <section>
@@ -396,9 +458,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Heart-paws.jpg" alt="Heart Shaped Urns With PawPrints" class="urns" />
+        <a href="pictures/Urns/Heart-paws.jpg" class="click"><img src="pictures/Urns/Heart-paws.jpg"
+            alt="Heart Shaped Urns With PawPrints" class="urns" /></a>
 
-        <img src="pictures/Urns/Elite-cat.jpg" alt="Standing Cat Shaped Urn" class="urns" />
+        <a href="pictures/Urns/Elite-cat.jpg" class="click"><img src="pictures/Urns/Elite-cat.jpg"
+            alt="Standing Cat Shaped Urn" class="urns" /></a>
       </section>
 
       <section>
@@ -427,9 +491,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Cozy-cat.jpg" alt="Resting Cat Shaped Urn" class="urns" />
+        <a href="pictures/Urns/Cozy-cat.jpg" class="click"><img src="pictures/Urns/Cozy-cat.jpg"
+            alt="Resting Cat Shaped Urn" class="urns" /></a>
 
-        <img src="pictures/Urns/Silhouette-cat.jpg" alt="Round Urn With Cat Designs" class="urns" />
+        <a href="pictures/Urns/Silhouette-cat.jpg" class="click"><img src="pictures/Urns/Silhouette-cat.jpg"
+            alt="Round Urn With Cat Designs" class="urns" /></a>
       </section>
 
       <section>
@@ -457,9 +523,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/MDF.jpg" alt="Cube Shaped Urn" class="urns" />
+        <a href="pictures/Urns/MDF.jpg" class="click"><img src="pictures/Urns/MDF.jpg" alt="Cube Shaped Urn"
+            class="urns" /></a>
 
-        <img src="pictures/Urns/MDF-image.jpg" alt="Cube Shaped Urn With Picture inside" class="urns" />
+        <a href="pictures/Urns/MDF-image.jpg" class="click"><img src="pictures/Urns/MDF-image.jpg"
+            alt="Cube Shaped Urn With Picture inside" class="urns" /></a>
       </section>
 
       <section>
@@ -474,21 +542,24 @@
         </div>
 
         <div class="descriptions">
-          <h3 class="description">Available in; cherry, natural and bamboo colours</h3>
-          <h3 class="description">Available in; black, cherry and natural colours</h3>
+          <h3 class="description">Available in; cherry, natural and bamboo colours <br />
+            Plaque engraving available</h3>
+          <h3 class="description">Available in; cherry, natural and bamboo colours <br />
+            Plaque engraving available</h3>
         </div>
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Mother-of-pearl.jpg" alt="Black And White Standard Urns With Pearlescent Options"
-          class="urns" />
+        <a href="pictures/Urns/Mother-of-pearl.jpg" class="click"><img src="pictures/Urns/Mother-of-pearl.jpg"
+            alt="Black And White Standard Urns With Pearlescent Options" class="urns" /></a>
 
-        <img src="pictures/Urns/Standard-granite.jpg" alt="Standard Urns With Granite Texture" class="urns" />
+        <a href="pictures/Urns/Standard-granite.jpg" class="click"><img src="pictures/Urns/Standard-granite.jpg"
+            alt="Standard Urns With Granite Texture" class="urns" /></a>
       </section>
 
       <section>
         <div class="names">
-          <h2 class="name">Standard Mother of Pearl Urn with Engraving</h2>
+          <h2 class="name">Standard Ceramic Urn with Engraving</h2>
           <h2 class="name">Standard Granite Stone Urns</h2>
         </div>
 
@@ -511,9 +582,11 @@
       </section>
 
       <section class="images">
-        <img src="pictures/Urns/Biodegradable.jpg" alt="Biodegradable Urns In Standard And Heart Shapes" class="urns" />
+        <a href="pictures/Urns/Biodegradable.jpg" class="click"><img src="pictures/Urns/Biodegradable.jpg"
+            alt="Biodegradable Urns In Standard And Heart Shapes" class="urns" /></a>
 
-        <img src="pictures/Urns/Deep Blue-Classic.jpg" alt="Standard Urn" class="urns" />
+        <a href="pictures/Urns/Deep Blue-Classic.jpg" class="click"><img src="pictures/Urns/Deep Blue-Classic.jpg"
+            alt="Standard Urn" class="urns" /></a>
       </section>
 
       <section>
@@ -536,11 +609,36 @@
         </div>
       </section>
 
-      <h3>Engravings Done By:</h3>
-      <p style="text-align: center; padding-top: 1%;">Duffy's Trophies Ltd.</p>
+      <br />
+
+      <h2>Engravings Done By:</h2>
+
+      <br />
+
+      <h3>Duffy's Trophies Ltd.</h3>
+      <br />
+
+      <section>
+        <h3>Location:</h3>
+
+        <p style="text-align: center;">444 Hampton St, Winnipeg, MB R3J 1P9</p>
+
+        <h3>Phone:</h3>
+
+        <a class="phone" href="tel:204-888-5821">(204) 888-5821</a>
+
+        <h3>Email:</h3>
+
+        <a class="email" href="mailto:duffystrophies@mymts.net">duffystrophies@mymts.net</a>
+
+        <h3>Website:</h3>
+
+        <a class="website" href="https://duffystrophies.ca/">https://duffystrophies.ca/</a>
+      </section>
 
       <br />
       <br />
+
     </div>
     </section>
     <a href="#top" id="back-to-top">&#9651;</a>
